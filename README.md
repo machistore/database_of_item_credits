@@ -5,7 +5,7 @@ I made it for the purpose of displaying a list of credit notation using SQLite e
 作品内で使用したアセット、マテリアル、テクスチャなどのクレジットデータをリレーショナルデータベースとして効率的に保存するためのテーブルのテンプレートです.  
 SQLiteなどを使ってクレジット表記を一覧表示する目的で作りました.
 
-# DEMO
+# Demo
 ＊This demonstration uses "[DB Browser for SQLite](https://sqlitebrowser.org/)" to visualize the database.  
 ＊このデモンストレーションでは"[DB Browser for SQLite](https://sqlitebrowser.org/)"を使用してデータベースを視覚化しています.
 
@@ -23,15 +23,16 @@ The "item_credit.sql" file contains SQL data as an example of aggregation.
 
 「item_credit.sql」ファイルには、集計の例として SQL データが含まれています.
 
-# table list テーブルリスト
-|Table Name<br>テーブル名|Description<br>説明|
-|:---:|:---:|
-|authors<br>著作者|authors details<br>著作者の詳細|
-|item_types<br>アイテムの種類|Data types such as textures<br>テクスチャなどデータの分類|
-|items<br>アイテム|item details<br>アイテムの詳細|
-|publishers<br>パブリッシャー|publisher details<br>パブリッシャーの詳細|
-|terms<br>利用規約|terms details<br>利用規約の詳細|
-|works<br>作品|work details<br>作品の詳細|
+# Table list テーブルリスト
+||Table Name<br>テーブル名|Description<br>説明|
+|:---:|:---:|:---:|
+|table 1|authors<br>著作者|authors details<br>著作者の詳細|
+|table 2|item_types<br>アイテムの種類|Data types such as textures<br>テクスチャなどデータの分類|
+|table 3|items<br>アイテム|item details<br>アイテムの詳細|
+|table 4|publishers<br>パブリッシャー|publisher details<br>パブリッシャーの詳細|
+|table 5|terms<br>利用規約|terms details<br>利用規約の詳細|
+|table ex.|works<br>作品|work details<br>作品の詳細<br>＊ A table will be set up for each work.<br>＊ 作品ごとに1つづつテーブルを設けます.|
+
 
 ---
 
@@ -171,6 +172,9 @@ The "item_credit.sql" file contains SQL data as an example of aggregation.
 |2|adaptation|INTEGER|0||0|
 |3|location_of_use|TEXT|0||0|
 
+＊ A table will be set up for each work.  
+＊ 作品ごとに1つづつテーブルを設けます.
+
 0. id(Primary key)
 1. item_id
     + See "items table" for details.
@@ -197,10 +201,10 @@ SQLiteが動作する環境が必要です。
 
 # Installation
 
-nzip the zip file downloaded from "[Release]()" and open the "item_redit.db" file in the "item_credit" folder with "[DB Browser for SQLite](https://sqlitebrowser.org/)".  
+nzip the zip file downloaded from "[Release](https://github.com/machistore/database_of_item_credits/releases)" and open the "item_redit.db" file in the "item_credit" folder with "[DB Browser for SQLite](https://sqlitebrowser.org/)".  
 Or, use SQLite from a command prompt. 
 
-「[Release]()」からダウンロードしたzipファイルを解凍し、「item_credit」フォルダの中の「item_credit.db」ファイルを"[DB Browser for SQLite](https://sqlitebrowser.org/)"で開く、  
+「[Release](https://github.com/machistore/database_of_item_credits/releases)」からダウンロードしたzipファイルを解凍し、「item_credit」フォルダの中の「item_credit.db」ファイルを"[DB Browser for SQLite](https://sqlitebrowser.org/)"で開く、  
 もしくはコマンドプロンプトなどからSQLiteをお使いください。  
 # Author
 
@@ -210,6 +214,6 @@ Or, use SQLite from a command prompt.
 
 # License
 
-"marionette_palettes" is under [The MIT License](https://opensource.org/licenses/mit-license.php)(https://licenses.opensource.jp/MIT/MIT.html)
+"database_of_item_credits" is under [The MIT License](https://opensource.org/licenses/mit-license.php)(https://licenses.opensource.jp/MIT/MIT.html)
 
 Copyright (c) 2022 Katsutoshi Machida
