@@ -214,6 +214,6 @@ Or, use SQLite from a command prompt.
 
 # License
 
-"marionette_palettes" is under [The MIT License](https://opensource.org/licenses/mit-license.php)(https://licenses.opensource.jp/MIT/MIT.html)
+"database_of_item_credits" is under [The MIT License](https://opensource.org/licenses/mit-license.php)(https://licenses.opensource.jp/MIT/MIT.html)
 
 Copyright (c) 2022 Katsutoshi Machida
