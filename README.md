@@ -5,7 +5,7 @@ I made it for the purpose of displaying a list of credit notation using SQLite e
 作品内で使用したアセット、マテリアル、テクスチャなどのクレジットデータをリレーショナルデータベースとして効率的に保存するためのテーブルのテンプレートです.  
 SQLiteなどを使ってクレジット表記を一覧表示する目的で作りました.
 
-# DEMO
+# Demo
 ＊This demonstration uses "[DB Browser for SQLite](https://sqlitebrowser.org/)" to visualize the database.  
 ＊このデモンストレーションでは"[DB Browser for SQLite](https://sqlitebrowser.org/)"を使用してデータベースを視覚化しています.
 
