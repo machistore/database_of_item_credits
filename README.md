@@ -4,6 +4,7 @@ SQLite database template for recording data credits.
 
 # DEMO
 
+![item_credit_db](https://user-images.githubusercontent.com/104885577/209272934-2986e98c-aab2-4fa9-a454-b7a0dd0951d0.png)
 
 
 # Features
