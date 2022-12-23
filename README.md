@@ -31,7 +31,9 @@ The "item_credit.sql" file contains SQL data as an example of aggregation.
 |table 3|items<br>アイテム|item details<br>アイテムの詳細|
 |table 4|publishers<br>パブリッシャー|publisher details<br>パブリッシャーの詳細|
 |table 5|terms<br>利用規約|terms details<br>利用規約の詳細|
-|table ex.|works<br>作品|work details<br>作品の詳細|
+|table ex.|works<br>作品|work details<br>作品の詳細<br>＊ A table will be set up for each work.<br>＊ 作品ごとに1つづつテーブルを設けます.
+|
+
 
 ---
 
@@ -170,6 +172,9 @@ The "item_credit.sql" file contains SQL data as an example of aggregation.
 |1|item_id|INTEGER|0||0|
 |2|adaptation|INTEGER|0||0|
 |3|location_of_use|TEXT|0||0|
+
+＊ A table will be set up for each work.  
+＊ 作品ごとに1つづつテーブルを設けます.
 
 0. id(Primary key)
 1. item_id
