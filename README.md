@@ -1,4 +1,4 @@
-# item_credit_db
+# database_of_item_credits
 This is a table template for efficiently storing credit data such as assets, materials, and textures used in a work as a relational database.  
 I made it for the purpose of displaying a list of credit notation using SQLite etc.  
 
