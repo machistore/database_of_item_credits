@@ -5,6 +5,7 @@ SQLite database template for recording data credits.
 # DEMO
 
 
+
 # Features
 A SQLite database template that allows you to aggregate source data such as items as simply as possible.    
 できるだけシンプルにアイテムなどのソースデータを集計できるようにするためのSQLiteによるデータベースのテンプレート.
@@ -13,11 +14,13 @@ A SQLite database template that allows you to aggregate source data such as item
 |Table Name<br>テーブル名|Description<br>説明|
 |:---:|:---:|
 |authors<br>著作者|authors details<br>著作者の詳細|
-|item_types<br>アイテムの種類|Data types such as textures<br>テクスチャなどデータの種類|
+|item_types<br>アイテムの種類|Data types such as textures<br>テクスチャなどデータの分類|
 |items<br>アイテム|item details<br>アイテムの詳細|
 |publishers<br>パブリッシャー|publisher details<br>パブリッシャーの詳細|
 |terms<br>利用規約|terms details<br>利用規約の詳細|
 |works<br>作品|work details<br>作品の詳細|
+
+---
 
 ## **author** table 著作者テーブル
 
@@ -39,7 +42,7 @@ A SQLite database template that allows you to aggregate source data such as item
     + Author contact
     + 著作者の連絡先
 
-## **item_types** table
+## **item_types** table アイテムタイプテーブル
 
 |cid|name|type|notnull|dflt_value|pk|
 |---|---|---|---|---|---|
@@ -51,7 +54,7 @@ A SQLite database template that allows you to aggregate source data such as item
     + Item type (e.g. textures etc.)
     + アイテムのタイプ(例:テクスチャ など)
 
-## **items** table
+## **items** table アイテムテーブル
 
 |cid|name|type|notnull|dflt_value|pk|
 |---|---|---|---|---|---|
@@ -69,14 +72,14 @@ A SQLite database template that allows you to aggregate source data such as item
 
 0. id(Primary key)
 1. item_type_id
-    + See "item_type_id" for details.
-    + 詳細は"item_type_id"を参照してください.
+    + See "item types table" for details.
+    + 詳細は"item types table"を参照してください.
 1. item_name
     + Item name
     + アイテムの名前
 1. author_id
-    + See "author_id" for details.
-    + 詳細は"author_id"を参照してください.
+    + See "authors table" for details.
+    + 詳細は"authors table"を参照してください.
 1. publication_year
     + Publication year
     + 発行年
@@ -84,8 +87,8 @@ A SQLite database template that allows you to aggregate source data such as item
     + Website title for the item, etc.
     + アイテムのウェブサイトのタイトルなど
 1. publisher_id
-    + See "publisher_id" for details.
-    + 詳細は"publisher_id"を参照してください.
+    + See "publishers table" for details.
+    + 詳細は"publishers table"を参照してください.
 1. url
     + e.g. Website URL for "source_title"
     + "source_title"のウェブサイトのURLなど.
@@ -93,13 +96,13 @@ A SQLite database template that allows you to aggregate source data such as item
     + The date the data was retrieved.
     + データを取得した日付.
 1. terms_id
-    + See "terms_id" for details.
-    + 詳細は"terms_id"を参照してください.
+    + See "terms table" for details.
+    + 詳細は"terms table"を参照してください.
 1. memo
     + A memo field where you can write anything, such as a summary of the data.
-    + データのまとめなど、何でも書き込めるメモ欄.
+    + データの概要など、何でも書き込めるメモ欄.
 
-## **publishers** table
+## **publishers** table パブリッシャーテーブル
 |cid|name|type|notnull|dflt_value|pk|
 |---|---|---|---|---|---|
 |0|id|INTEGER|1||1|
@@ -110,15 +113,15 @@ A SQLite database template that allows you to aggregate source data such as item
 0. id(Primary key)
 1. publisher_name
     + Publisher name
-    + パブリッシャーの名前
+    + プラットフォームやパブリッシャーの名前
 1. url
     + URL of publisher
-    + パブリッシャーのURL
+    + プラットフォームやパブリッシャーのURL
 1. contacts
     + Publisher contact.
-    + パブリッシャーの連絡先.
+    + プラットフォームやパブリッシャーの連絡先.
 
-## **terms** table
+## **terms** table 利用規約テーブル
 
 |cid|name|type|notnull|dflt_value|pk|
 |---|---|---|---|---|---|
@@ -140,27 +143,53 @@ A SQLite database template that allows you to aggregate source data such as item
     + URL of the website where the contents of the terms are posted.
     + 規約の内容を掲載しているウェブサイトのURL.
 1. created_at
-    + 
+    + The date the data was retrieved.
+    + データを取得した日付.
+1. updated_at
+    + Date of data update.
+    + データをアップデートした日付.
 
-
-
-## **work_a** table
+## **work_a** table 作品例Aテーブル
 
 |cid|name|type|notnull|dflt_value|pk|
 |---|---|---|---|---|---|
 |0|id|INTEGER|1||1|
 |1|item_id|INTEGER|0||0|
-|2|modification|INTEGER|0||0|
+|2|adaptation|INTEGER|0||0|
 |3|location_of_use|TEXT|0||0|
 
-
+0. id(Primary key)
+1. item_id
+    + See "items table" for details.
+    + 詳細は"items table" を参照してください.
+1. adaptation
+    + Adapted or not.    
+    Yes = 1  
+    No = 0
+    + 翻案の有無.  
+    有り = 1  
+    無し = 0
+1. location_of_use
+    + Item usage.
+    + アイテムの使用箇所.
 
 # E-R diagram
 
+![item_credit_ERd](item_credit_ERd.png)
+
 # Requerement
+
+An environment that can operate SQLite is required.
+
+SQLiteが動作する環境が必要です。
 
 # Installation
 
+nzip the zip file downloaded from "[Release](https://)" and open the "item_redit.db" file in the "item_credit" folder with "[DB Browser for SQLite](https://sqlitebrowser.org/)".  
+Or, use SQLite from a command prompt. 
+
+「[Release](https://github.com/machistore/item-credit/releases)」からダウンロードしたzipファイルを解凍し、「item_credit」フォルダの中の「item_credit.db」ファイルを"[DB Browser for SQLite](https://sqlitebrowser.org/)"で開く、  
+もしくはコマンドプロンプトなどからSQLiteをお使いください。  
 # Author
 
 * Katsutoshi Machida
