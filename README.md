@@ -174,8 +174,7 @@ A SQLite database template that allows you to aggregate source data such as item
     + アイテムの使用箇所.
 
 # E-R diagram
-
-![item_credit_ERd](item_credit_ERd.png)
+![item_credit_ERd](https://user-images.githubusercontent.com/104885577/209269887-cdbf7968-ee3d-4f93-9dd5-cc901b01d5d6.png)
 
 # Requerement
 
