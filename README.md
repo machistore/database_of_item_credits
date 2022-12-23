@@ -1,14 +1,26 @@
 # item_credit_db
-SQLite database template for recording data credits.     
-データのクレジットを記録するためのSQLiteで作成されたデータベースのテンプレート.
+Efficiently save credit data such as assets, materials, and textures used in works as a relational database.  
+Also, I made it for the purpose of displaying a list of credit notation using SQLite etc.  
+
+作品内で使用したアセット、マテリアル、テクスチャなどのクレジットデータをリレーショナルデータベースとして効率的に保存します.  
+また、SQLiteなどを使ってクレジット表記を一覧表示する目的で作りました.
 
 # DEMO
+＊This demonstration uses "[DB Browser for SQLite](https://sqlitebrowser.org/)" to visualize the database.  
+＊このデモンストレーションでは"[DB Browser for SQLite](https://sqlitebrowser.org/)"を使用してデータベースを視覚化しています.
+
+Here's a tabulated list of credits for items used.  
+使用したアイテムのクレジット一覧を集計して表にしたところ.
+
+
+![item_credit_db2](https://user-images.githubusercontent.com/104885577/209273482-ca1c2c0a-9998-4c10-b593-02fc8b6a5a6b.png)
 
 ![item_credit_db](https://user-images.githubusercontent.com/104885577/209272934-2986e98c-aab2-4fa9-a454-b7a0dd0951d0.png)
 
 
 # Features
-A SQLite database template that allows you to aggregate source data such as items as simply as possible.    
+A SQLite database template that allows you to aggregate source data such as items as simply as possible.  
+
 できるだけシンプルにアイテムなどのソースデータを集計できるようにするためのSQLiteによるデータベースのテンプレート.
 
 # table list テーブルリスト
