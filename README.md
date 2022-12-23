@@ -1,14 +1,27 @@
 # item_credit_db
-SQLite database template for recording data credits.     
-データのクレジットを記録するためのSQLiteで作成されたデータベースのテンプレート.
+This is a table template for efficiently storing credit data such as assets, materials, and textures used in a work as a relational database.  
+I made it for the purpose of displaying a list of credit notation using SQLite etc.  
+
+作品内で使用したアセット、マテリアル、テクスチャなどのクレジットデータをリレーショナルデータベースとして効率的に保存するためのテーブルのテンプレートです.  
+SQLiteなどを使ってクレジット表記を一覧表示する目的で作りました.
 
 # DEMO
+＊This demonstration uses "[DB Browser for SQLite](https://sqlitebrowser.org/)" to visualize the database.  
+＊このデモンストレーションでは"[DB Browser for SQLite](https://sqlitebrowser.org/)"を使用してデータベースを視覚化しています.
 
+Here's a tabulated list of credits for items used.  
+使用したアイテムのクレジット一覧を集計して表にしたところ.
+
+
+![item_credit_db2](https://user-images.githubusercontent.com/104885577/209273482-ca1c2c0a-9998-4c10-b593-02fc8b6a5a6b.png)
+
+![item_credit_db](https://user-images.githubusercontent.com/104885577/209272934-2986e98c-aab2-4fa9-a454-b7a0dd0951d0.png)
 
 
 # Features
-A SQLite database template that allows you to aggregate source data such as items as simply as possible.    
-できるだけシンプルにアイテムなどのソースデータを集計できるようにするためのSQLiteによるデータベースのテンプレート.
+The "item_credit.sql" file contains SQL data as an example of aggregation.  
+
+「item_credit.sql」ファイルには、集計の例として SQL データが含まれています.
 
 # table list テーブルリスト
 |Table Name<br>テーブル名|Description<br>説明|
@@ -184,10 +197,10 @@ SQLiteが動作する環境が必要です。
 
 # Installation
 
-nzip the zip file downloaded from "[Release](https://)" and open the "item_redit.db" file in the "item_credit" folder with "[DB Browser for SQLite](https://sqlitebrowser.org/)".  
+nzip the zip file downloaded from "[Release]()" and open the "item_redit.db" file in the "item_credit" folder with "[DB Browser for SQLite](https://sqlitebrowser.org/)".  
 Or, use SQLite from a command prompt. 
 
-「[Release](https://github.com/machistore/item-credit/releases)」からダウンロードしたzipファイルを解凍し、「item_credit」フォルダの中の「item_credit.db」ファイルを"[DB Browser for SQLite](https://sqlitebrowser.org/)"で開く、  
+「[Release]()」からダウンロードしたzipファイルを解凍し、「item_credit」フォルダの中の「item_credit.db」ファイルを"[DB Browser for SQLite](https://sqlitebrowser.org/)"で開く、  
 もしくはコマンドプロンプトなどからSQLiteをお使いください。  
 # Author
 
