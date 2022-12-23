@@ -23,15 +23,15 @@ The "item_credit.sql" file contains SQL data as an example of aggregation.
 
 「item_credit.sql」ファイルには、集計の例として SQL データが含まれています.
 
-# table list テーブルリスト
-|Table Name<br>テーブル名|Description<br>説明|
-|:---:|:---:|
-|authors<br>著作者|authors details<br>著作者の詳細|
-|item_types<br>アイテムの種類|Data types such as textures<br>テクスチャなどデータの分類|
-|items<br>アイテム|item details<br>アイテムの詳細|
-|publishers<br>パブリッシャー|publisher details<br>パブリッシャーの詳細|
-|terms<br>利用規約|terms details<br>利用規約の詳細|
-|works<br>作品|work details<br>作品の詳細|
+# Table list テーブルリスト
+||Table Name<br>テーブル名|Description<br>説明|
+|:---:|:---:|:---:|
+|table 1|authors<br>著作者|authors details<br>著作者の詳細|
+|table 2|item_types<br>アイテムの種類|Data types such as textures<br>テクスチャなどデータの分類|
+|table 3|items<br>アイテム|item details<br>アイテムの詳細|
+|table 4|publishers<br>パブリッシャー|publisher details<br>パブリッシャーの詳細|
+|table 5|terms<br>利用規約|terms details<br>利用規約の詳細|
+|table ex.|works<br>作品|work details<br>作品の詳細|
 
 ---
 
