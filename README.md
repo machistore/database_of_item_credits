@@ -1,9 +1,9 @@
 # item_credit_db
-Efficiently save credit data such as assets, materials, and textures used in works as a relational database.  
-Also, I made it for the purpose of displaying a list of credit notation using SQLite etc.  
+This is a table template for efficiently storing credit data such as assets, materials, and textures used in a work as a relational database.  
+I made it for the purpose of displaying a list of credit notation using SQLite etc.  
 
-作品内で使用したアセット、マテリアル、テクスチャなどのクレジットデータをリレーショナルデータベースとして効率的に保存します.  
-また、SQLiteなどを使ってクレジット表記を一覧表示する目的で作りました.
+作品内で使用したアセット、マテリアル、テクスチャなどのクレジットデータをリレーショナルデータベースとして効率的に保存するためのテーブルのテンプレートです.  
+SQLiteなどを使ってクレジット表記を一覧表示する目的で作りました.
 
 # DEMO
 ＊This demonstration uses "[DB Browser for SQLite](https://sqlitebrowser.org/)" to visualize the database.  
@@ -19,9 +19,9 @@ Here's a tabulated list of credits for items used.
 
 
 # Features
-A SQLite database template that allows you to aggregate source data such as items as simply as possible.  
+The "item_credit.sql" file contains SQL data as an example of aggregation.  
 
-できるだけシンプルにアイテムなどのソースデータを集計できるようにするためのSQLiteによるデータベースのテンプレート.
+「item_credit.sql」ファイルには、集計の例として SQL データが含まれています.
 
 # table list テーブルリスト
 |Table Name<br>テーブル名|Description<br>説明|
