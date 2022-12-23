@@ -202,10 +202,10 @@ SQLiteが動作する環境が必要です。
 
 # Installation
 
-nzip the zip file downloaded from "[Release]()" and open the "item_redit.db" file in the "item_credit" folder with "[DB Browser for SQLite](https://sqlitebrowser.org/)".  
+nzip the zip file downloaded from "[Release](https://github.com/machistore/database_of_item_credits/releases)" and open the "item_redit.db" file in the "item_credit" folder with "[DB Browser for SQLite](https://sqlitebrowser.org/)".  
 Or, use SQLite from a command prompt. 
 
-「[Release]()」からダウンロードしたzipファイルを解凍し、「item_credit」フォルダの中の「item_credit.db」ファイルを"[DB Browser for SQLite](https://sqlitebrowser.org/)"で開く、  
+「[Release](https://github.com/machistore/database_of_item_credits/releases)」からダウンロードしたzipファイルを解凍し、「item_credit」フォルダの中の「item_credit.db」ファイルを"[DB Browser for SQLite](https://sqlitebrowser.org/)"で開く、  
 もしくはコマンドプロンプトなどからSQLiteをお使いください。  
 # Author
 
